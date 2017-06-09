@@ -38,3 +38,13 @@ th, td {
 th {
     txt-align: center;
 }
+div.box {
+    background-color: white;
+    color: lightblue;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+} 
+span.important {
+    font-size:120%;
+    color:red;
+}

@@ -8,8 +8,10 @@
 </head>
 <h1 title="You are an asshat" style="background-color:darkblue;color:white;font-family:Verdana;text-align:center" a href = "#top">Learning HTML</h1>
 <!-- Some more tests -->
+<div class="box">
 <p>This is a <em>paragraph</em> <ins>in HTML</ins>. This is <q><abbr title="TOTALLY">fun</abbr></q></p>
 <p><bdo dir = "rtl">This will be written by the browser from right to left</bdo>
+</div>
 <hr>
 <img src="C:\Users\flavi\Downloads\TRIGGERED.jpg" alt="TRIGGERED" width="250" height="250">
 <hr>
@@ -33,12 +35,18 @@
   </tr>
 </table>
 <hr>
-<h3>Stuff to complete: </h3>
+<h3>Stuff to <span style = "color:red">complete</span>: </h3>
 <ul style="list-style-type:disc">
-  <li>This shit</li>
+  <li><span class="important">This shit</span></li>
   <li>Unreal</li>
   <li>Life</li>
 </ul>
-<h2><a href="https://www.w3schools.com">Using this website for tutorials</a></h2>
+
+<script>
+getElementById("demo").innerHTML = "Hello World, I'm using Javascript!";
+</script>
+
+<h2><a href="https://www.w3schools.com" target="iframe_a">Using this website for tutorials</a></h2>
 </body>
 </html>
+<iframe src="demo_iframe.htm" name="iframe_a" width = "400"></iframe>
