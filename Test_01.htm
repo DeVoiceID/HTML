@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-UK">
 <body>
+
+<!-- Setting the information of the page -->
 <head>
-  <link rel="stylesheet" href="style.css">
-  <title>RELEARNING THIS FKING HTML</title>
-  <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>RELEARNING THIS FKING HTML</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<nav>
+  <ul>
+    <li><a href="#">London</a></li>
+    <li><a href="#">Paris</a></li>
+    <li><a href="#">Tokyo</a></li>
+  </ul>
+</nav>
+<article>
+<p id="demo"></p>
+
 <h1 title="You are an asshat" style="background-color:darkblue;color:white;font-family:Verdana;text-align:center" a href = "#top">Learning HTML</h1>
 <!-- Some more tests -->
 <div class="box">
@@ -15,38 +28,49 @@
 <hr>
 <img src="C:\Users\flavi\Downloads\TRIGGERED.jpg" alt="TRIGGERED" width="250" height="250">
 <hr>
-<!--[if IE 9]>
-    <h3>This has been written in IE 9!"</h3>
-<![endif]-->
+
+<!-- Creating a table, where tr is a row, th is a header, and td is a cell -->
 <table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th colspan = "2">Other Details</th> 
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td> 
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td> 
-    <td>94</td>
-  </tr>
+	<tr>
+		<th>Firstname</th>
+		<th colspan = "2">Other Details</th> 
+	</tr>
+	<tr>
+		<td>Jill</td>
+		<td>Smith</td> 
+		<td>50</td>
+	</tr>
+	<tr>
+		<td>Eve</td>
+		<td>Jackson</td> 
+		<td>94</td>
+	</tr>
 </table>
+
 <hr>
+
+<!-- creating a list -->
 <h3>Stuff to <span style = "color:red">complete</span>: </h3>
 <ul style="list-style-type:disc">
-  <li><span class="important">This shit</span></li>
-  <li>Unreal</li>
-  <li>Life</li>
+	<li><span class="important">This shit</span></li>
+	<li>Unreal</li>
+	<li>Life</li>
 </ul>
 
+<!-- Testing java script -->
 <script>
-getElementById("demo").innerHTML = "Hello World, I'm using Javascript!";
+	document.getElementById("demo").innerHTML = "Hello World, I'm using Javascript!";
+	document.getElementById("demo").style.fontSize = "25px";
+	document.getElementById("demo").style.color = "white";
+	document.getElementById("demo").style.backgroundColor = "steelblue";
 </script>
-
+<div style="text-align:center;">
+	<iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=jacksepticeye" width="65%" height="800"></iframe>
+</div>
+<br>
+<iframe src="demo_iframe.htm" name="iframe_a" width = "400"></iframe>
 <h2><a href="https://www.w3schools.com" target="iframe_a">Using this website for tutorials</a></h2>
+</article>
 </body>
 </html>
-<iframe src="demo_iframe.htm" name="iframe_a" width = "400"></iframe>
+
