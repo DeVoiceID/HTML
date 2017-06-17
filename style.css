@@ -1,24 +1,16 @@
 body {
-    background-color: powderblue;
+    background-color: white;
 }
 h1 {
-    color: blue;
-    font-family: verdana;
-    font-size: 300%;
+	
 }
 p {
     color: darkblue;
-    border: 1px solid powderblue;
-    padding: 10px;
-    margin: 10px;
 }
 p.error {
     color: red;
 }
-#p01 {
-    color: blue;
-    
-}
+
 a:hover {
    color:orange;
    background-color: transparent;
@@ -54,9 +46,8 @@ div.container {
 }
 
 header, footer {
-    padding: 1em;
-    color: white;
-    background-color: black;
+	padding: 2px;
+    background-color: lightblue;
     clear: left;
     text-align: center;
 }
