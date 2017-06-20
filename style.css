@@ -1,24 +1,44 @@
 body {
-    background-color: white;
+    background-image:url("Cityscapeblur.jpg")
 }
-h1 {
-	
+h1{
+font-family:Microsoft YaHei Light;
 }
+h2 {
+	font-family:Microsoft YaHei Light;
+}
+
+h3 {
+	font-family:Microsoft YaHei Light;
+}
+
+h4 {
+	font-family:Microsoft YaHei Light;
+}
+
 p {
-    color: darkblue;
+    color: black;
+	font-family:Microsoft YaHei Light;
 }
+
 p.error {
     color: red;
 }
 
-a:hover {
-   color:orange;
+p.whitespace {
+	white-space:normal;
+}
+a:h
+over {
+   color:blue;
    background-color: transparent;
    text-decoration: underline;
 }
+
 a:link {
     background-color: transparent; 
     text-decoration: none;
+	font-family:Microsoft YaHei Light;
 }
 table, th, td {
     border: 1px solid black;
@@ -30,26 +50,37 @@ th, td {
 th {
     txt-align: center;
 }
-div.box {
-    background-color: white;
-    color: lightblue;
-    margin: 20px 0 20px 0;
-    padding: 10px;
-} 
-span.important {
-    font-size:120%;
-    color:red;
-}
-div.container {
+
+div.footer {
+    clear: both;
+    background: #2A2A2A;
+    color: White;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
     width: 100%;
-    border: 1px solid gray;
+	color: white;
+	font-family:Microsoft YaHei Light;
+}
+
+
+
+div.boundingBox a:hover {
+	background-color:rgba(0, 0, 0, 0.2);
+	float:left
 }
 
 header, footer {
-	padding: 2px;
-    background-color: lightblue;
+	padding:2px;
+    background-color: #2A2A2A;
     clear: left;
     text-align: center;
+	color:white;
+	font-family:Microsoft YaHei Light;
 }
 
 nav {
@@ -69,8 +100,125 @@ nav ul a {
 }
 
 article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
+	padding-top:5em;
+	margin-left:100px;
+	margin-right:100px;
     padding: 1em;
     overflow: hidden;
+	background-color:white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
+li.navbar {
+	display: inline;
+	display: block;
+	float: left;
+	background-color: transparent;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+	color:black;
+	font-size:150%
+}
+
+li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+	color:white;
+}
+
+ul {	list-style-type: none;
+	margin: 0;	padding: 0;	overflow: hidden;	background-color: transparent;	margin-left:100px;
+	margin-right:100px;
+}
+
+aside {	position: absolute;
+	float:right;
+	right:8px;
+	top:175px;
+	width:170px; 
+	bottom: 0px;
+	background-color:transparent;
+	padding:1em;
+}
+
+button.menubutton {
+	float:left;
+	background-color: transparent;
+	border:none;
+	color:white;
+	font-size:200%;
+}
+button.LoginDropbtn {
+	float:right;
+	background-color: Transparent;
+	border:none;
+	color:white;
+	padding: 1em;
+	font-size: 100%;
+	font-style:bold;
+}
+	
+button.loginButton {
+	margin-top:20px;
+	display:block;
+	margin:0 auto;
+	margin-bottom:20px;
+	width: 100px;
+	height:40px;
+	border:none;
+	background-color:DeepSkyBlue;
+	color:white;
+	border-radius: 5px;
+	text-decoration:bold;
+}
+
+button.loginButton:hover {
+	background-color:SteelBlue;
+	color:white;
+}
+
+form.loginForm {
+	border:none;
+}
+
+input[type=text] {
+	border:none;
+	border-radius:3px;
+	height:20px;
+	padding-left:10px;
+	padding-right:10px;
+}
+	
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #2A2A2A;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown{
+	align:right;
+	float:right;
+	top: -85px;
+	position:relative;
+	z-index: 1
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+	

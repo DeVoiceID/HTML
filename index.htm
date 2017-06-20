@@ -8,33 +8,77 @@
 </head>
 	
 <header>
+	<!-- Opening the sidebar menu -->	<button class="menubutton" onclick="sidebar_open()"><b>☰</b></button>
+	
+	
+	<div class="dropdown">
+	<div class="boundingBox">
+		<button onclick="LoginDrop()" class="LoginDropbtn">Login</button>
+	</div>
+	  <div id="LoginDropdown" class="dropdown-content">
+		<a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#contact">Contact</a>
+	  </div>
+	</div>
+
 	<h1 style = "font-size:300%;">This is a test page</h1>
 </header>
+<br style="padding:1em;">
 
 
-
-<nav>
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Information</a></li>
-    <li><a href="#">About</a></li>
+    <li class="navbar"><a href="#">Home</a></li>
+    <li class="navbar"><a href="#">Information</a></li>
+    <li class="navbar"><a href="#">About</a></li>
   </ul>
-</nav>
+
+  
+  
+<div class="sidebar" style="display:none" id="mySidebar">
+	<button onclick="sidebar_close()" class="CloseSidebarbtn">Close &times;</button>
+	<div class ="sidebar" style="padding:0.5em;">
+			<a href="#" class="sidebar_link"><p class=whitespace> 1</p></a>
+			<a href="#" class="sidebar_link"><p class=whitespace>Link 2</p></a>
+			<a href="#" class="sidebar_link"><p class=whitespace>Link 3</p></a>
+	</div>
+</div>
 
 
 
-<aside>
-	<form action="/action_page.php">
-	  First name:<br>
-	  <input type="text" name="firstname" value="Mickey">
-	  <br>
-	  Last name:<br>
-	  <input type="text" name="lastname" value="Mouse">
-	  <br><br>
-	  <input type="submit" value="Submit">
-	</form> 
-</aside>
+<script>
+function sidebar_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function sidebar_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
+
+<!-- Script for the login dropdown box -->
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function LoginDrop() {
+    document.getElementById("LoginDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.LoginDropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
 
@@ -48,9 +92,9 @@
 
 
 
-<footer>
-	<p style = "text-align:center">www.Hollyoak.org.uk</text>
-</footer>
+<div class = "footer">
+	<p style = "text-align:center; color:white;">www.Hollyoak.org.uk</text>
+</div>
 
 
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Test page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+</head>
+	
+<header>
+	<!-- Login button-->
+	<div class="boundingBox">
+			<button onclick="LoginDrop()" class="LoginDropbtn">Login</button>
+	</div>
+	<h1 style = "font-size:300%;">This is a test page</h1>
+</header>
+
+<!-- Login dropdown content -->
+	<div class="dropdown">
+		  <div id="LoginDropdown" class="dropdown-content">
+			<form class="loginstyle="padding-left:20px; padding-bottom:20px; padding-top:40px; padding-right:20px">
+				<p style="text-align:center; margin-bottom:5px;"> Username:</p>
+				<input type="text" name="Username" placeholder="Username"><br>
+				<p style="text-align:center; margin-bottom:5px;">Password:</p>
+				<input type="text" name="Password" placeholder="Password">
+			</form>
+			<button class="loginButton">Login</button>
+		  </div>
+		</div>
+	</div>
+
+<br>
+
+<!-- navbar -->
+  <ul>
+	<div class="boundingBox" style="padding:20px;">
+		<li class="navbar"><a href="#">Home</a></li>
+		<li class="navbar"><a href="#">Information</a></li>
+		<li class="navbar"><a href="#">About</a></li>
+	</div>
+  </ul>
+
+<br>
+
+<!-- Script for the login dropdown box -->
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function LoginDrop() {
+    document.getElementById("LoginDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.LoginDropbtn') && !event.target.matches('.boundingBox')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<article style="padding-top:20px;">
+	<h2>This is a test page</h2>
+	<h3>This is a test page</h3>
+	<h4>This is a test page</h4>
+	<h5>This is a test page</h5>
+	<p>This is a test page</p>
+</article>
+
+
+
+<div class = "footer">
+	<p style = "text-align:center; color:white;">www.Hollyoak.org.uk</text>
+</div>
+
+
+
+</body>
+</html>
